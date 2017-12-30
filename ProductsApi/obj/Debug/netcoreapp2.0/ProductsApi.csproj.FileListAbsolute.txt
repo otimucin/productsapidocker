@@ -1,0 +1,11 @@
+D:\Projects\_MyProjects\ProductsApi\ProductsApi\bin\Debug\netcoreapp2.0\ProductsApi.deps.json
+D:\Projects\_MyProjects\ProductsApi\ProductsApi\bin\Debug\netcoreapp2.0\ProductsApi.runtimeconfig.json
+D:\Projects\_MyProjects\ProductsApi\ProductsApi\bin\Debug\netcoreapp2.0\ProductsApi.runtimeconfig.dev.json
+D:\Projects\_MyProjects\ProductsApi\ProductsApi\bin\Debug\netcoreapp2.0\ProductsApi.dll
+D:\Projects\_MyProjects\ProductsApi\ProductsApi\bin\Debug\netcoreapp2.0\ProductsApi.pdb
+D:\Projects\_MyProjects\ProductsApi\ProductsApi\obj\Debug\netcoreapp2.0\ProductsApi.csproj.CoreCompileInputs.cache
+D:\Projects\_MyProjects\ProductsApi\ProductsApi\obj\Debug\netcoreapp2.0\ProductsApi.AssemblyInfoInputs.cache
+D:\Projects\_MyProjects\ProductsApi\ProductsApi\obj\Debug\netcoreapp2.0\ProductsApi.AssemblyInfo.cs
+D:\Projects\_MyProjects\ProductsApi\ProductsApi\obj\Debug\netcoreapp2.0\ProductsApi.dll
+D:\Projects\_MyProjects\ProductsApi\ProductsApi\obj\Debug\netcoreapp2.0\ProductsApi.pdb
+D:\Projects\_MyProjects\ProductsApi\ProductsApi\obj\Debug\netcoreapp2.0\ProductsApi.csprojResolveAssemblyReference.cache

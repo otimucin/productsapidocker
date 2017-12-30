@@ -1,0 +1,2 @@
+D:\Projects\_MyProjects\ProductsApi\obj\Release\docker-compose.dcproj.CoreCompileInputs.cache
+C:\Users\otimucin\Documents\ProductsApi\obj\Release\docker-compose.dcproj.CoreCompileInputs.cache

@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  productsapi:
+    image: productsapi
+    build:
+      context: ./ProductsApi
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80" 
+  postgres:
+    image: postgres
+    ports:
+    - "5432:5432"
+    environment:
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "1"
+      POSTGRES_DB: "postgres" 

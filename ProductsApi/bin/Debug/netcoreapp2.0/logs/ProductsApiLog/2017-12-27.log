@@ -1,0 +1,10 @@
+[2017-12-27 22:14:32.8691][WISGNBT50][Info] Application started... 
+[2017-12-27 22:15:01.6454][WISGNBT50][Info] Request starting HTTP/1.1 GET http://localhost:2463/api/product   
+[2017-12-27 22:15:01.8659][WISGNBT50][Info] Authorization failed for user: (null). 
+[2017-12-27 22:15:01.8659][WISGNBT50][Info] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'. 
+[2017-12-27 22:15:01.8740][WISGNBT50][Info] Executing ChallengeResult with authentication schemes (Bearer). 
+[2017-12-27 22:15:01.8740][WISGNBT50][Info] AuthenticationScheme: Bearer was challenged. 
+[2017-12-27 22:15:01.8740][WISGNBT50][Info] Executed action ProductsApi.Controllers.ProductController.GetAllProducts (ProductsApi) in 49.6083ms 
+[2017-12-27 22:15:02.2770][WISGNBT50][Info] Request finished in 633.664ms 401  
+[2017-12-27 22:15:10.5040][WISGNBT50][Info] Application stopping... 
+[2017-12-27 22:15:10.5288][WISGNBT50][Info] Application stopped... 

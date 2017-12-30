@@ -1,0 +1,31 @@
+services:
+  db:
+    environment:
+      POSTGRES_PASSWORD: '1'
+      POSTGRES_USER: postgres
+    image: postgres
+    ports:
+    - 5431:5432/tcp
+  productsapi:
+    build:
+      args:
+        source: obj/Docker/publish/
+      context: C:\Users\otimucin\Documents\ProductsApi\ProductsApi
+      dockerfile: Dockerfile
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: productsapi
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
+        --additionalProbingPath /root/.nuget/fallbackpackages  ProductsApi.dll'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/bash -c "if PID=$$(pidof
+        -x dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - 80/tcp
+    - 8000:80/tcp
+    volumes:
+    - C:\Users\otimucin\vsdbg:/remote_debugger:ro
+version: '3.0'
