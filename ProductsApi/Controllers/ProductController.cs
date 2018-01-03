@@ -14,7 +14,7 @@ namespace ProductsApi.Controllers
 {
     [Produces("application/json")]
     [Route("api/product")]
-    //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class ProductController : Controller
     {
         private readonly ProductsApiContext _context;
