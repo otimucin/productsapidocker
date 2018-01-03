@@ -14,7 +14,7 @@ namespace ProductsApi.Controllers
 {
     [Produces("application/json")]
     [Route("api/product")]
-    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class ProductController : Controller
     {
         private readonly ProductsApiContext _context;
@@ -73,31 +73,47 @@ namespace ProductsApi.Controllers
         [HttpPost]
         public void AddProduct([FromBody] Product value)
         {
-            var product = new Product
+            try
             {
-                Title = value.Title,
-                Price = value.Price,
-                CreatedDate = DateTime.Now
-            };
-            _context.Products.Add(product);
-            _context.SaveChanges();
+                var product = new Product
+                {
+                    Title = value.Title,
+                    Price = value.Price,
+                    CreatedDate = DateTime.Now
+                };
+                _context.Products.Add(product);
+                _context.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex,"Yeni kayıt eklenemedi");
+            }
+           
         }
 
         [HttpPut("{id}")]
         public void UpdateProduct(int id, [FromBody] Product value)
         {
-            if (id > 0)
+            try
             {
-                var product = new Product
+                if (id > 0)
                 {
-                    Id = id,
-                    Title = value.Title,
-                    Price = value.Price,
-                    ModifiedDate = DateTime.Now
-                };
-                _context.Products.Update(product);
-                _context.SaveChanges();
+                    var product = new Product
+                    {
+                        Id = id,
+                        Title = value.Title,
+                        Price = value.Price,
+                        ModifiedDate = DateTime.Now
+                    };
+                    _context.Products.Update(product);
+                    _context.SaveChanges();
+                }
             }
+            catch (Exception ex)
+            {
+              _logger.LogError(ex,"Kayıt güncelleme işleminde hata oluştu");
+            }
+           
         }
 
         [HttpDelete("{id}")]

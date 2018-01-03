@@ -7,7 +7,7 @@ services:
       context: ./ProductsApi
       dockerfile: Dockerfile
     ports:
-      - "8080:80" 
+      - "8035:80" 
   postgres:
     image: postgres
     ports:
@@ -15,4 +15,4 @@ services:
     environment:
       POSTGRES_USER: "postgres"
       POSTGRES_PASSWORD: "1"
-      POSTGRES_DB: "postgres" 
+      POSTGRES_DB: "postgres"  

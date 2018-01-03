@@ -1,9 +1,7 @@
-networks:
-  webnet:
-    driver: bridge
 services:
-  db:
+  postgres:
     environment:
+      POSTGRES_DB: postgres
       POSTGRES_PASSWORD: '1'
       POSTGRES_USER: postgres
     image: postgres
@@ -12,21 +10,23 @@ services:
   productsapi:
     build:
       args:
-        source: obj/Docker/publish/
+        source: obj/Docker/empty/
       context: C:\Users\otimucin\Documents\ProductsApi\ProductsApi
       dockerfile: Dockerfile
     entrypoint: tail -f /dev/null
     environment:
       ASPNETCORE_ENVIRONMENT: Development
-    image: productsapi
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+    image: productsapi:dev
     labels:
       com.microsoft.visualstudio.debuggee.killprogram: /bin/bash -c "if PID=$$(pidof
         -x dotnet); then kill $$PID; fi"
       com.microsoft.visualstudio.debuggee.program: dotnet
       com.microsoft.visualstudio.debuggee.workingdirectory: /app
     ports:
+    - 8035:80/tcp
     - 80/tcp
-    - 8000:80/tcp
     volumes:
+    - C:\Users\otimucin\Documents\ProductsApi\ProductsApi:/app:rw
     - C:\Users\otimucin\vsdbg:/remote_debugger:ro
 version: '3.0'

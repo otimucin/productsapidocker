@@ -1,0 +1,11 @@
+Kaynaklar;
+
+https://medium.com/@lugrugzo/asp-net-core-2-0-webapi-jwt-authentication-with-identity-mysql-3698eeba6ff8
+https://medium.com/@nafizb/jwt-ile-oturum-y%C3%B6netimi-ve-oauth-2-6e6e2eef5780
+http://hamidmosalla.com/2017/10/19/policy-based-authorization-using-asp-net-core-2-and-json-web-token-jwt/
+https://medium.com/@selcukusta/nginx-redis-net-core-i%CC%87le-distributed-session-y%C3%B6netimi-4aa7e7085dc7
+http://www.bayramucuncu.com/json-web-token-jwt/
+http://hamidmosalla.com/2017/10/19/policy-based-authorization-using-asp-net-core-2-and-json-web-token-jwt/
+https://www.youtube.com/watch?v=md20lQut9EE
+https://docs.docker.com/compose/gettingstarted/#step-4-build-and-run-your-app-with-compose
+http://cagatayyildiz.com/mvc-validation-kullanimi/

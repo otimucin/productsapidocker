@@ -1,0 +1,1 @@
+C:\Users\otimucin\Documents\ProductsApi\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache

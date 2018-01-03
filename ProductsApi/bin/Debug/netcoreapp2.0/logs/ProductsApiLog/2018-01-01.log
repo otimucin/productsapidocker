@@ -1,0 +1,13 @@
+[2018-01-01 21:43:26.9471][WISGNYAZILIM85][Info] Application started... 
+[2018-01-01 21:43:27.6604][WISGNYAZILIM85][Info] Request starting HTTP/1.1 GET http://localhost:2462/api/product   
+[2018-01-01 21:43:29.1181][WISGNYAZILIM85][Info] Executing action method ProductsApi.Controllers.ProductController.GetAllProducts (ProductsApi) with arguments ((null)) - ModelState is Valid 
+[2018-01-01 21:43:29.1622][WISGNYAZILIM85][Info] Tüm Ürünler Listeleniyor 
+[2018-01-01 21:43:30.2106][WISGNYAZILIM85][Info] Entity Framework Core 2.0.1-rtm-125 initialized 'ProductsApiContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+[2018-01-01 21:43:31.3863][WISGNYAZILIM85][Info] Executed DbCommand (51ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."CreatedDate", "p"."ModifiedDate", "p"."Price", "p"."Title"
+FROM "Products" AS "p" 
+[2018-01-01 21:43:31.5353][WISGNYAZILIM85][Info] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+[2018-01-01 21:43:32.0168][WISGNYAZILIM85][Info] Executed action ProductsApi.Controllers.ProductController.GetAllProducts (ProductsApi) in 3019.9047ms 
+[2018-01-01 21:43:32.1007][WISGNYAZILIM85][Info] Request finished in 4633.757ms 200 application/json; charset=utf-8 
+[2018-01-01 21:43:32.1998][WISGNYAZILIM85][Info] Request starting HTTP/1.1 GET http://localhost:2462/favicon.ico   
+[2018-01-01 21:43:32.2475][WISGNYAZILIM85][Info] Request finished in 46.7846ms 404  

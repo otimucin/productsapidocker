@@ -1,9 +1,7 @@
-networks:
-  webnet:
-    driver: bridge
 services:
-  db:
+  postgres:
     environment:
+      POSTGRES_DB: postgres
       POSTGRES_PASSWORD: '1'
       POSTGRES_USER: postgres
     image: postgres
@@ -17,6 +15,6 @@ services:
       ASPNETCORE_ENVIRONMENT: Development
     image: productsapi
     ports:
+    - 8035:80/tcp
     - 80/tcp
-    - 8000:80/tcp
 version: '3.0'
